@@ -1,0 +1,29 @@
+@use "../abstracts/variables";
+@use "../base/reset";
+@use "../abstracts/mixins";
+
+.sidebar-nav {
+    display: none;
+}
+
+
+@media (min-width: 39rem) {
+    .sidebar-nav {
+        background-color: variables.$background-color;
+        display: flex;
+        width: 25.9rem;
+        height: 100%;
+        
+
+        ul {
+            display:flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+    }
+
+    .friends-activity {
+        display: none;
+    }
+}

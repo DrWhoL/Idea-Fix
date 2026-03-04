@@ -12,7 +12,7 @@
     @include mixins.navbar;
     height: 9.5rem;
     justify-content: space-evenly;
-    background-color: lighten(variables.$dark-overlay, 15%);
+    background-color: lighten(variables.$background-color, 15%);
     bottom: 0;
 
     ul {
@@ -47,10 +47,13 @@
 
     ul {
         display:flex;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 0.1rem 0.8rem;
 
       &:hover {
@@ -59,13 +62,24 @@
       }
     }
 
-    li:last-child {
-        padding-top: 0.5rem;
+   // li:last-child {
+   //     padding-top: 0.5rem;
+   // }
+
+    .search {
+        max-width: 11.9rem;
+        
+        input[type="search"] {
+            border: none;
+            outline: none;
+            background: none;
+            background-image: url(../../assets/icons/icons\ big.png);
+        }
     }
 
     img {
         width: 100%;
-        max-width: 119rem;
+        max-width: 11.9rem;
         height: auto;
     }
 

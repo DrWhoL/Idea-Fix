@@ -9,27 +9,6 @@
 <body>
 
 <div class="app">
-
-  <!-- LEFT SIDEBAR -->
-  <aside class="sidebar">
-    <nav class="sidebar-nav">
-      <h2>My Library</h2>
-
-      <ul>
-        <li>Pins</li>
-        <li>Playlists</li>
-        <li>Liked Songs</li>
-        <li>Saves</li>
-        <li>Albums</li>
-        <li>Folders</li>
-        <li>Podcasts</li>
-        <li>Audiobooks</li>
-        <li>Artists</li>
-      </ul>
-    </nav>
-  </aside>
-
-
   <!-- MAIN AREA -->
   <div class="main-content">
 
@@ -39,7 +18,11 @@
           <li><a href="#"><img src="./assets/icons/library1.png" alt="library"></a></li>
           <li><a href="#"><img src="./assets/icons/home1.png" alt="home"></a></li>
           <li><a href="#"><img src="./assets/icons/discover1.png" alt="discover"></a></li>
-          <li><a href="#"><img src="./assets/icons/search1.png" alt="search"></a></li>
+          <li>
+            <div class="search">
+              <input type="search" class="search__input" placeholder="Search..."/>
+            </div>
+          </li>
         </ul>
         <ul>
           <li><a href="#"><img src="./assets/icons/bell.png" alt="bell"></a></li>
@@ -51,9 +34,29 @@
       </nav>
     </header>
 
+
     <main class="content">
 
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar"> 
+          <nav class="sidebar-nav">
+            <ul>
+              <li><a href=""><img src="./assets/icons/pins.png" alt="library"></a></li>
+              <li><a href=""><img src="./assets/icons/playlists.png" alt="playlist"></a></li>
+              <li><a href=""><img src="./assets/icons/likedsongs.png" alt="likedsongs"></a></li>
+              <li><a href=""><img src="./assets/icons/saves.png" alt="saves"></a></li>
+              <li><a href=""><img src="./assets/icons/albums.png" alt="albums"></a></li>
+              <li><a href=""><img src="./assets/icons/folders.png" alt="folders"></a></li>
+              <li><a href=""><img src="./assets/icons/podcasts.png" alt="podcasts"></a></li>
+              <li><a href=""><img src="./assets/icons/audiobooks.png" alt="audiobooks"></a></li>
+              <li><a href=""><img src="./assets/icons/artists.png" alt="artists"></a></li>
+            </ul>
+          </nav>
+        </aside>
+
       <section class="section">
+
+
         <h2>Made For You</h2>
 
         <div class="cards-grid">
