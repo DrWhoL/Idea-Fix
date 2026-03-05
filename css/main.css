@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding-bottom: 9.5rem;
+}
+
+.discover {
+  display: flex;
+}
 
 /*# sourceMappingURL=main.css.map */
