@@ -1,6 +1,7 @@
 @use "../abstracts/variables";
 @use "../base/reset";
 @use "../abstracts/mixins";
+@use "../layout/grid";
 
 
 
@@ -41,6 +42,7 @@
         height: 5.4rem;
         justify-content: space-between;
         background-color: variables.$background-color;
+        left: 0;
         top: 0;
         padding: 0rem 1rem;
     }
@@ -62,12 +64,12 @@
       }
     }
 
-   // li:last-child {
-   //     padding-top: 0.5rem;
-   // }
+    .leftnav {
+        gap: 11rem;
+    }
 
     .search {
-        max-width: 11.9rem;
+        max-width: 12rem;
         
         input[type="search"] {
             border: none;
@@ -79,7 +81,7 @@
 
     img {
         width: 100%;
-        max-width: 11.9rem;
+        max-width: 30rem;
         height: auto;
     }
 
