@@ -1,3 +1,125 @@
+.player {
+  position: fixed;
+  bottom: 60px;
+  left: 8px;
+  right: 8px;
+  height: 60px;
+  background-color: #3b424d;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  z-index: 1100;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.player .player-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+.player .player-content .album-art {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.player .player-content .player-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 5px;
+  min-width: 0;
+}
+.player .player-content .player-info .song-title {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  font-family: sans-serif;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  padding-left: 100%;
+}
+.player .player-content .player-info .artist-name {
+  color: #b3b3b3;
+  font-size: 13px;
+  margin: 0;
+  font-family: sans-serif;
+}
+.player .player-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+.player .player-controls .add-btn {
+  background: none;
+  border: 1.5px solid #b3b3b3;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+.player .player-controls .add-btn .plus-icon {
+  color: #b3b3b3;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  transform: translateY 0;
+}
+.player .player-controls .add-btn:hover {
+  border-color: #ffffff;
+}
+.player .player-controls .add-btn:hover .plus-icon {
+  color: #ffffff;
+}
+.player .player-controls .play-btn {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 20px;
+  margin-top: -2px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+.player .player-controls .play-btn:hover {
+  color: #ffffff;
+}
+.player .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.player .progress-bar-container .progress-bar-fill {
+  width: 35%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
