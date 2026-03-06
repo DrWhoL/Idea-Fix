@@ -1,3 +1,21 @@
-.discover{
-    display: flex;
+@use "../base/reset";
+@mixin grid-columns{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
 }
+.discover{
+    @include grid-columns()
+}
+.genres{
+    @include grid-columns()
+}
+ .card img{
+    width: 17rem;
+    height: 10rem;
+   margin-top: 1rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+

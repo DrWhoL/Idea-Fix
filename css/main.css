@@ -13,7 +13,25 @@ body {
 }
 
 .discover {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.genres {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.card img {
+  width: 17rem;
+  height: 10rem;
+  margin-top: 1rem;
+}
+
+h4 {
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
